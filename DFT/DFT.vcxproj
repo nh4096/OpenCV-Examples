@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{afa4b8af-e5bf-4d4a-af51-d2d36dfe3e2b}</ProjectGuid>
-    <RootNamespace>XMLInputOutput</RootNamespace>
+    <ProjectGuid>{8c256a43-4e56-4c72-9547-654abd579da7}</ProjectGuid>
+    <RootNamespace>DFT</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -141,7 +141,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="XMLInputOutput.cpp" />
+    <ClCompile Include="DFT.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Program Files\OpenCV\sources\samples\data\lena.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
