@@ -40,6 +40,27 @@ void mat_example_3()
     cout << m <<endl;
 }
 
+void mat_example_4()
+{
+    Mat a = Mat::ones(Size(8, 8), CV_8U) * 255;
+    Mat roi = Mat(a, Rect(2, 2, 4, 4));
+    roi = 0;
+    cout << a << endl;
+    //Mat ar = a.row(2);
+    //ar = Scalar(0);    
+    //a.col(6) = Scalar(2);
+}
+
+void mat_example_5()
+{
+    Mat m(4, 4, CV_8UC3, Scalar(192, 192, 64));
+    cout << m << endl;
+}
+
+void mat_example_6()
+{
+    CV_8UC(0);
+}
 void point_example_1()
 {
     Point2d p(3, 4);
@@ -48,10 +69,21 @@ void point_example_1()
     cout << q << endl;
 }
 
+void scalar_example_1()
+{
+    Scalar a = Scalar(2.5); // (2.5,0,0,0)
+    Scalar b = Scalar(1.5, 2.5, 3.5, 4.5);
+    cout << a << endl;
+    cout << b << endl;
+}
+
 int main()
 {
     //mat_example_1();
     //mat_example_2();
     //mat_example_3();
-    point_example_1();
+    //mat_example_4();
+    mat_example_5();
+    //point_example_1();
+    //scalar_example_1();
 }
